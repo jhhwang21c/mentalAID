@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- 수정 테스트 gggg-->
+<head>
+    <meta charset="utf-8">
+    <title>홈페이지</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="js/faq.js" type="text/javascript"></script>
+    <script src="js/indexScript.js" type="text/javascript"></script>
+    <script src="js/test.js" type="text/javascript"></script>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/webflow.css" rel="stylesheet" type="text/css">
+    <link href="css/faq.css" rel="stylesheet" type="text/css">
+    <link href="css/mental-wellness.webflow.css" rel="stylesheet" type="text/css">
+    <link href="css/self-diagnosis.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+    <div data-collapse="medium" data-animation="default" data-duration="400" data-doc-height="1" role="banner" class="navbar w-nav">
+        <div class="container w-container"><a href="index.html" class="logo-block w-nav-brand"><img src="images/LIFEPLUS_Signature_B.jpg" sizes="(max-width: 479px) 96.96875px, (max-width: 767px) 135.75px, 155.140625px" alt="" class="logo fixed"></a>
+            <nav role="navigation" class="nav_menu w-nav-menu">
+                <a href="mapping.php" class="nav_page_link">상담센터 찾기</a>
+                <a href="test.html" class="nav_page_link">간편 심리진단</a>
+                <a href="faq.html" aria-current="page" class="nav_page_link w--current">FAQ</a>
+                <a href="#" data-ix="show-contact-overlay" class="nav_page_link contact w-nav-link" onclick="clickLogin()">로그인</a></nav>
+            <div class="fixed-nav-menu-button w-nav-button">
+                <div class="w-icon-nav-menu"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="Hero-Section" class="section_hero-2">
+        <div class="container w-container">
+            <div class="hero_description_main">테스트 직장 스트레스로 힘든 마음, 혼자 해결할 수 없다면<br>사람들 사이에서 받은 상처, 극복할 수 없다면<br>우울한 내 모습,
+                누구에게도
+                보여주기 싫다면<br>바닥난 자존감, 이제 나답게 살고 싶다면</div>
+            <div class="hero_description_sub">지속 가능하고 주체적인 삶을 위한 Mental Wellness를 실현해보세요</div>
+            <a href="mapping.php" class="hero_button w-button">상담센터 찾기</a>
+        </div>
+    </div>
+    <div class="section_contents">
+        <div class="container w-container">
+            <div class="contents_title">행복을 위한 용기 있는 한걸음</div>
+            <div class="contents_description">간단한 진단을 통해 심리적인 어려움을 점검해보세요.<br>자신의 증상을 이해하는 데서 마음의 치유가 시작됩니다.<br></div>
+            <div data-duration-in="300" data-duration-out="100" class="test_tabs w-tabs">
+
+                <!-- Main Tab -->
+                <div class="test_tabs_menu w-tab-menu">
+                    <!-- 스트레스 Tab -->
+                    <a class="test_tabs_button w-inline-block w-tab-link w--current" id="btnTap1" onclick="changeTap('1', 'divTap', 'btnTap')">
+                        <div class="test_tabs_text">스트레스</div>
+                    </a>
+                    <!-- 대인관계 Tab -->
+                    <a class="test_tabs_button w-inline-block w-tab-link" id="btnTap2" onclick="changeTap('2', 'divTap', 'btnTap')">
+                        <div class="test_tabs_text">대인관계</div>
+                    </a>
+                    <!-- 사회불안 Tab -->
+                    <a class="test_tabs_button w-inline-block w-tab-link" id="btnTap3" onclick="changeTap('3', 'divTap', 'btnTap')">
+                        <div class="test_tabs_text">사회불안</div>
+                    </a>
+                    <!-- 이상행동 Tab -->
+                    <a class="test_tabs_button w-inline-block w-tab-link" id="btnTap4" onclick="changeTap('4', 'divTap', 'btnTap')">
+                        <div class="test_tabs_text">이상행동</div>
+                    </a>
+                </div>
+
+                <div class="test_tabs_contents w-tab-content">
+                    <div data-w-tab="Website Projects" class="test_tabs_pane w-tab-pane w--tab-active" id="divTap1">
+                        <div class="test_contents_description">스트레스 없는 삶.. 정말 불가능한 걸까요?<br>나의 지금 스트레스 지수는 어느 정도인지
+                            점검해보세요.</div>
+                        <div class="w-layout-grid test_contents_grid">
+                            <div class="tests_contens_div"><a href="test.html#btnTap_stress1" class="test_contents_image w-inline-block"><img src="images/stress1.jpg" alt="" class="image"></a><a href="#" class="test_contents_text">만성 스트레스
+                                    진단</a></div>
+                            <div class="tests_contens_div"><a href="#" class="w-inline-block"><img src="images/stress.jpg" srcset="images/stress-p-500.jpeg 500w, images/stress.jpg 2121w" sizes="(max-width: 479px) 96vw, (max-width: 767px) 93vw, (max-width: 991px) 89vw, 940px" alt="" class="image"></a><a href="#" class="test_contents_text">직장 스트레스 진단</a>
+                            </div>
+                            <div class="tests_contens_div"><a href="#" class="w-inline-block"><img src="images/family-conflict.jpg" alt="" class="image"></a><a href="#" class="test_contents_text">가족 스트레스 진단</a></div>
+                        </div>
+                    </div>
+                    <div data-w-tab="App Design" class="test_tabs_pane w-tab-pane" id="divTap2">
+                        <div class="test_contents_description">기획 단계에 진단 내용 및 결과 분석 서베이 필요<br>추후 업데이트 예정</div>
+                        <div class="w-layout-grid test_contents_grid">
+                            <div class="tests_contens_div"><a href="#" class="w-inline-block"><img src="images/image.png" srcset="images/image-p-500.png 500w, images/image.png 640w" sizes="(max-width: 479px) 96vw, (max-width: 695px) 92vw, 640px" alt="" class="image"></a><a href="#" class="test_contents_text">*** 진단</a></div>
+                            <div class="tests_contens_div"><a href="#" class="w-inline-block"><img src="images/image.png" srcset="images/image-p-500.png 500w, images/image.png 640w" sizes="(max-width: 479px) 96vw, (max-width: 695px) 92vw, 640px" alt="" class="image"></a><a href="#" class="test_contents_text">*** 진단</a></div>
+                            <div class="tests_contens_div"><a href="#" class="w-inline-block"><img src="images/image.png" srcset="images/image-p-500.png 500w, images/image.png 640w" sizes="(max-width: 479px) 96vw, (max-width: 695px) 92vw, 640px" alt="" class="image"></a><a href="#" class="test_contents_text">*** 진단</a></div>
+                        </div>
+                    </div>
+                    <div data-w-tab="Graphic Design" class="test_tabs_pane w-tab-pane" id="divTap3">
+                        <div class="test_contents_description">기획 단계에 진단 내용 및 결과 분석 서베이 필요<br>추후 업데이트 예정</div>
+                        <div class="w-layout-grid test_contents_grid">
+                            <div class="tests_contens_div"><a href="#" class="w-inline-block"><img src="images/image.png" srcset="images/image-p-500.png 500w, images/image.png 640w" sizes="(max-width: 479px) 96vw, (max-width: 695px) 92vw, 640px" alt="" class="image"></a><a href="#" class="test_contents_text">*** 진단</a></div>
+                            <div class="tests_contens_div"><a href="#" class="w-inline-block"><img src="images/image.png" srcset="images/image-p-500.png 500w, images/image.png 640w" sizes="(max-width: 479px) 96vw, (max-width: 695px) 92vw, 640px" alt="" class="image"></a><a href="#" class="test_contents_text">*** 진단</a></div>
+                            <div class="tests_contens_div"><a href="#" class="w-inline-block"><img src="images/image.png" srcset="images/image-p-500.png 500w, images/image.png 640w" sizes="(max-width: 479px) 96vw, (max-width: 695px) 92vw, 640px" alt="" class="image"></a><a href="#" class="test_contents_text">*** 진단</a></div>
+                        </div>
+                    </div>
+                    <div data-w-tab="Other Work" class="test_tabs_pane w-tab-pane" id="divTap4">
+                        <div class="test_contents_description">기획 단계에 진단 내용 및 결과 분석 서베이 필요<br>추후 업데이트 예정</div>
+                        <div class="w-layout-grid test_contents_grid">
+                            <div class="tests_contens_div"><a href="#" class="w-inline-block"><img src="images/image.png" srcset="images/image-p-500.png 500w, images/image.png 640w" sizes="(max-width: 479px) 96vw, (max-width: 695px) 92vw, 640px" alt="" class="image"></a><a href="#" class="test_contents_text">*** 진단</a></div>
+                            <div class="tests_contens_div"><a href="#" class="w-inline-block"><img src="images/image.png" srcset="images/image-p-500.png 500w, images/image.png 640w" sizes="(max-width: 479px) 96vw, (max-width: 695px) 92vw, 640px" alt="" class="image"></a><a href="#" class="test_contents_text">*** 진단</a></div>
+                            <div class="tests_contens_div"><a href="#" class="w-inline-block"><img src="images/image.png" srcset="images/image-p-500.png 500w, images/image.png 640w" sizes="(max-width: 479px) 96vw, (max-width: 695px) 92vw, 640px" alt="" class="image"></a><a href="#" class="test_contents_text">*** 진단</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section_devider"></div>
+
+    <!-- tell me tell me -->
+    <div class="section_contents">
+        <div class="w-container">
+            <div class="contents_title">마음속 이야기를 들려주세요.</div>
+            <div class="contents_description">유기적으로 변화하고 성장하는 삶의 역동성 속에서<br>개개인의 삶이 Mental Wellness의 가치를 만나 긍정적으로 변화하고
+                성장하길
+                기대합니다</div>
+            <div class="w-layout-grid promise_grid">
+                <div class="promise_div"><img src="images/Protection.png" alt="" class="promise_image">
+                    <div class="promise_title">정보유출 안심</div>
+                    <div class="promise_description"> 내담자의 상담내용은 일체 유출되지 않습니다. 가슴 깊이 묻어놓았던 응어리를 세상에 내뱉어보세요.</div>
+                </div>
+                <div class="promise_div"><img src="images/Certification.png" alt="" class="promise_image">
+                    <div class="promise_title">검증된 상담</div>
+                    <div class="promise_description">전문 상담기관 및 상담사를 엄선하였습니다. 자격과 경력을 갖춘 전문가에게 본인의 이야기를 들려주세요.</div>
+                </div>
+                <div class="promise_div"><img src="images/Low-Price.png" alt="" class="promise_image">
+                    <div class="promise_title">합리적인 가격</div>
+                    <div class="promise_description">합리적인 가격에 전문 업체와 제휴를 맺었습니다. 할인 혜택을 통하여 멘탈 관리를 이용하세요.</div>
+                </div>
+                <div class="promise_div"><img src="images/Time-and-Location.png" alt="" class="promise_image">
+                    <div class="promise_title">편리한 이용</div>
+                    <div class="promise_description">제휴업체 맵핑을 통하여 지역을 전국으로 확장하고 있습니다. 집근처 편하신 시간에 예약하세요.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video -->
+    <div class="section_video">
+        <div class="w-container">
+            <div class="contents_description-2">유기적으로 변화하고 성장하는 삶의 역동성 속에서<br>개개인의 삶이 Mental Wellness의 가치를 만나 긍정적으로 변화하고
+                성장하길
+                기대합니다</div>
+            <div class="contents_title-2">Lifeplus는 모두의 곁에서 함께 있겠습니다.</div>
+            <a href="#" class="contents_video w-inline-block w-lightbox">
+                <div class="contents_video_image">
+                    <div class="contents_video_button"><img src="images/Icon-play-white.png" alt="" class="video-lightbox-icon">
+                    </div>
+                </div>
+                <script type="application/json" class="w-json">
+                    {
+                        "items": [{
+                            "type": "video",
+                            "originalUrl": "https://www.youtube.com/watch?v=XzwP0WUtJGk&t=1s",
+                            "url": "https://www.youtube.com/watch?v=XzwP0WUtJGk&t=1s",
+                            "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FXzwP0WUtJGk%3Fstart%3D1%26feature%3Doembed%26start%3D1&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXzwP0WUtJGk&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FXzwP0WUtJGk%2Fhqdefault.jpg&args=start%3D1&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+                            "thumbnailUrl": "https://i.ytimg.com/vi/XzwP0WUtJGk/hqdefault.jpg",
+                            "width": 940,
+                            "height": 528
+                        }]
+                    }
+                </script>
+            </a>
+        </div>
+    </div>
+
+    <!-- Botter -->
+    <div class="section_booter">
+        <div class="container w-container">
+            <div class="contents_title-3">다음 브랜드와 함께 우리 모두의 Mentall Wellness를 이어갑니다.</div>
+            <div class="logos-row w-row">
+                <div class="logo-column w-col w-col-2 w-col-small-4 w-col-tiny-4"><img src="images/logo-webflow.png" sizes="(max-width: 479px) 56.8125px, (max-width: 991px) 90.90625px, 113.625px" alt="" class="client-logo">
+                </div>
+                <div class="logo-column w-col w-col-2 w-col-small-4 w-col-tiny-4"><img src="images/Logo-spotify.png" sizes="(max-width: 479px) 56.8125px, (max-width: 991px) 90.90625px, 113.625px" alt="" class="client-logo">
+                </div>
+                <div class="logo-column w-col w-col-2 w-col-small-4 w-col-tiny-4"><img src="images/logo-google.png" sizes="(max-width: 479px) 56.8125px, (max-width: 991px) 90.90625px, 113.625px" alt="" class="client-logo">
+                </div>
+                <div class="logo-column w-col w-col-2 w-col-small-4 w-col-tiny-4"><img src="images/Logo-skype.png" sizes="(max-width: 479px) 56.8125px, (max-width: 991px) 90.90625px, 113.625px" alt="" class="client-logo">
+                </div>
+                <div class="logo-column w-col w-col-2 w-col-small-4 w-col-tiny-4"><img src="images/logo-netflix.png" sizes="(max-width: 479px) 56.8125px, (max-width: 991px) 90.90625px, 113.625px" alt="" class="client-logo">
+                </div>
+                <div class="logo-column w-col w-col-2 w-col-small-4 w-col-tiny-4"><img src="images/logo-webflow.png" sizes="(max-width: 479px) 56.8125px, (max-width: 991px) 90.90625px, 113.625px" alt="" class="client-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact-overlay" id="loginMain">
+        <div class="container-2 w-container">
+            <div class="form-wrapper"><a href="#" data-ix="close-contact-overlay" class="close-link" onclick="closeLogin()">✕
+                </a>
+                <div class="from-text">여러분의 행복을 응원합니다.<br>LIFEPLUS는 언제나 늘 곁에 있습니다.</div>
+                <div class="form-block w-form">
+                    <form id="email-form" name="email-form" data-name="Email Form" class="form"><input type="email" id="Email-2" name="Email" data-name="Email" maxlength="256" placeholder="이메일을 입력하세요." required="" class="text-field w-input"><input type="password" id="Password" name="Password" data-name="Password" required="" maxlength="256" placeholder="비밀번호를 입력하세요." class="text-field w-input"><input type="submit" value="로그인" data-wait="Please wait..." class="submit-button w-button">
+                        <div class="w-clearfix"><a href="#" class="link">아이디</a>
+                            <div class="text-block-2">•</div><a href="#" class="link">비밀번호찾기</a><a href="#" class="link-2">회원가입하기</a><img src="images/lock.png" alt="" class="image-6"><img src="images/man.png" srcset="images/man-p-500.png 500w, images/man.png 554w" sizes="100vw" alt="" class="image-7">
+                        </div>
+                    </form>
+                    <div class="success-message w-form-done">
+                        <p class="success-text">Thank you! Your submission has been received!</p>
+                    </div>
+                    <div class="w-form-fail">
+                        <p>Oops! Something went wrong while submitting the form</p>
+                    </div>
+                </div>
+                <div class="small-divider"></div><a href="#" class="kakao-link-block w-inline-block"><img src="images/kakao.png" srcset="images/kakao-p-500.png 500w, images/kakao-p-800.png 800w, images/kakao-p-1080.png 1080w, images/kakao.png 1200w" sizes="100vw" alt="" class="image-2">
+                    <div class="kakao-text-block">카카오톡 로그인</div>
+                </a><a href="#" class="naver-link-block w-inline-block"><img src="images/naver.png" alt="" class="image-2">
+                    <div class="naver-text-block">네이버 로그인</div>
+                </a><a href="#" class="google-link-block w-inline-block"><img src="images/google.png" srcset="images/google-p-500.png 500w, images/google-p-800.png 800w, images/google-p-1080.png 1080w, images/google-p-1600.png 1600w, images/google.png 2000w" sizes="100vw" alt="" class="image-2">
+                    <div class="google-text-block-copy">구글 로그인</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5ecbc30fe2efa985f6def9ea" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <script src="js/webflow.js" type="text/javascript"></script>
+    <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+
+</body>
+
+</html>

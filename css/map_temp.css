@@ -1,0 +1,97 @@
+
+.list__scrollbar {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    width: 350px;
+    height: 90%;
+    top: 45px;
+}
+
+.offline-center-list-box_top {
+    margin-top: 25px;
+    width: 100%;
+    min-height: 128px;
+    padding: 16px;
+    position: relative;
+    text-align: left;
+    border-bottom: 1px solid #E0E0E0;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.offline-center-list-box {
+    width: 400px;
+    min-height: 128px;
+    padding: 16px;
+    position: relative;
+    text-align: left;
+    border-bottom: 1px solid #E0E0E0;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.offline-center-box-field {
+    margin-left: 75px;
+}
+
+.partner-image {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 12px;
+    top: 30px
+}
+
+.offline-center-box__type {
+    font-size: 12px; 
+    line-height: 16px;
+    margin-top: 4px;
+    color: #757575;
+}
+
+.offline-center-box__distance {
+    margin-top: 4px;
+    line-height: 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.offline-center-box__title-text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.offline-center-box__telephone-number {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 4px;
+    color: #333333;
+}
+
+.map_box {
+    top: 80px;
+    left: 365px;
+    border: 4px dashed #bcbcbc;
+    width: calc(100% - 730px);
+    height: calc(100% - 90px);
+    position: fixed;
+}
+
+.conditions {
+    top: 0px;
+    right: 10px;
+    width: 350px;
+    position: fixed;
+}
+
+.conditions_box {
+    margin-top: 10px;
+    margin-left: 10px;
+}

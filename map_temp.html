@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>홈페이지</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="js/faq.js" type="text/javascript"></script>
+    <script src="js/indexScript.js" type="text/javascript"></script>
+    <script src="js/test.js" type="text/javascript"></script>
+    <link href="css/map_temp.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/webflow.css" rel="stylesheet" type="text/css">
+    <link href="css/faq.css" rel="stylesheet" type="text/css">
+    <link href="css/mental-wellness.webflow.css" rel="stylesheet" type="text/css">
+    <link href="css/self-diagnosis.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+    <div data-collapse="medium" data-animation="default" data-duration="400" data-doc-height="1" role="banner"
+        class="navbar w-nav">
+        <div class="container">
+            <a href="index.html" class="logo-block w-nav-brand"><img src="images/logo_1.png"
+                    sizes="(max-width: 479px) 96.96875px, (max-width: 767px) 135.75px, 155.140625px" alt=""
+                    class="logo fixed"></a>
+            <nav role="navigation" class="nav_menu">
+                
+                <a href="mapping.php" class="nav_page_link">상담센터 찾기</a>
+                <a href="test.html" class="nav_page_link">간편 심리진단</a>
+                <a href="faq.html" aria-current="page" class="nav_page_link w--current">FAQ</a>
+                <a href="#" data-ix="show-contact-overlay" class="nav_page_link contact w-nav-link"
+                    onclick="clickLogin()">로그인</a></nav>
+
+            <div class="fixed-nav-menu-button w-nav-button">
+                <div class="w-icon-nav-menu"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--working-->
+
+    <!--list section-->
+    <div id="offlineCenterList" class="list__scrollbar">
+
+        <div class="offline-center-list-box_top">
+            <div class="partner-image" style="background-size:cover;"><img src="images/jyp.png"></div>
+            <div class="offline-center-box-field">
+                <div class="offline-center-box__title-text">사이발달상담심리연구소</div>
+                <div class="offline-center-box__type">심리상담센터<span style="color:#bdbdbd;margin: 0 8px;">|</span>29m</div>
+                <div class="offline-center-box__telephone-number">02-587-4275</div>
+            </div>
+        </div>
+
+        <div class="offline-center-list-box">
+            <div class="partner-image" style="background-image:url(/images/jyp.png);background-size:cover;"></div>
+            <div class="offline-center-box-field">
+                <div class="offline-center-box__title-text">샤인심리상담센터</div>
+                <div class="offline-center-box__type">심리상담센터</div>
+                <div class="offline-center-box__distance">566m<span style="color:#bdbdbd;margin: 0 8px;">|</span>서울특별시
+                    강남구 강남대로 382 메리츠타워</div>
+                <div class="offline-center-box__telephone-number">010-9133-4810</div>
+            </div>
+        </div>
+
+        <div class="offline-center-list-box">
+            <div class="offline-center-box-field">
+                <div class="partner-image" style="background-size:cover;"><img src="images/jyp.png"></div>
+                <div class="offline-center-box__title-text">말하기듣기 심리상담센터</div>
+                <div class="offline-center-box__type">심리상담센터</div>
+                <div class="offline-center-box__distance">639m<span style="color:#bdbdbd;margin: 0 8px;">|</span>서울특별시
+                    서초구 서초대로 396 강남빌딩</div>
+                <div class="offline-center-box__telephone-number">02-2190-3750</div>
+            </div>
+        </div>
+
+        <div class="offline-center-list-box">
+            <div class="offline-center-box-field">
+                <div class="partner-image" style="background-size:cover;"><img src="images/jyp.png"></div>
+                <div class="offline-center-box__title-text">밝은마음심리치료센터</div>
+                <div class="offline-center-box__type">심리상담센터</div>
+                <div class="offline-center-box__distance">17m<span style="color:#bdbdbd;margin: 0 8px;">|</span>서울특별시
+                    서초구 사임당로 180 보원빌딩</div>
+                <div class="offline-center-box__telephone-number">02-516-7577</div>
+            </div>
+        </div>
+
+        <div class="offline-center-list-box">
+            <div class="offline-center-box-field">
+                <div class="partner-image" style="background-size:cover;"><img src="images/jyp.png"></div>
+                <div class="offline-center-box__title-text">이지브레인의원</div>
+                <div class="offline-center-box__type">정신건강의학과</div>
+                <div class="offline-center-box__distance">54m<span style="color:#bdbdbd;margin: 0 8px;">|</span>서울특별시
+                    서초구 사임당로 174 강남미래타워</div>
+                <div class="offline-center-box__telephone-number">02-583-9080</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--map scetion-->
+    <div id="map" class="map_box">지도지도지도지도
+
+
+        <button
+            style="width: 40px; height: 40px; position: absolute; bottom: 300px; right: 15px; background-color: transparent;"
+            onclick="c_respond()"><img src="/images/c_loc.png" /></button>
+    </div>
+
+
+    <!--conditions scetion-->
+    <div id="conditions" class="conditions">
+        <div class="section-mapping">
+            <div class="search_container_condition w-container">
+                <div class="form-block-5 w-form">
+
+
+                    <div class="conditions_box">
+                        <div class="search_div">
+                            <div class="div-block-10"><img src="images/filter-1634626-1389150.png" alt=""
+                                    class="search_image">
+                                <div class="multi_filter_text">고민 분야 선택</div>
+                                <div class="multi_filter_dis">(최대 5개 선택 가능)</div>
+                            </div>
+
+                            <div>
+                                <table class="keyword-list__row">
+                                    <tbody>
+                                        <tr>
+                                            <td class="keyword_check">대인관계</td>
+                                            <td class="keyword_check">친구</td>
+                                            <td class="keyword_check">부부</td>
+                                            <td class="keyword_check">연인</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="keyword_check">가족</td>
+                                            <td class="keyword_check">학업</td>
+                                            <td class="keyword_check">직장</td>
+                                            <td class="keyword_check">진로</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="keyword_check">취업</td>
+                                            <td class="keyword_check">육아</td>
+                                            <td class="keyword_check">해외생활</td>
+                                            <td class="keyword_check">중독</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="keyword_check">섭식장애</td>
+                                            <td class="keyword_check">성생활</td>
+                                            <td class="keyword_check">성소수자</td>
+                                            <td class="keyword_check">감정조절</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="keyword_check">자해</td>
+                                            <td class="keyword_check">자살</td>
+                                            <td class="keyword_check">기타</td>
+                                            <td class="keyword_check is-null-keyword" style="border: none;"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conditions_box">
+                        <div class="search_div">
+                            <div class="div-block-10"><img src="images/heart_healing.png" alt="" class="search_image">
+                                <div class="multi_filter_text">내담자</div>
+                            </div>
+                            <div class="div-block-11">
+                                <div class="div-block-5">
+                                    <div class="text-block-16">테스트</div>
+                                    <label class="sex_button w-clearfix w-radio">
+                                        <input type="radio" name="counselee_sex" id="ctgr1" value="ALL"
+                                            onclick="javascript:sortingMapByCtgr(this.value)"
+                                            class="w-form-formradioinput radio-button-2 w-radio-input">
+                                        <span for="man" class="radio-button-label w-form-label">전체</span></label>
+
+                                    <label class="sex_button w-clearfix w-radio">
+                                        <input type="radio" data-name="counselee_sex" id="woman-2" value="woman"
+                                            name="counselee_sex"
+                                            class="w-form-formradioinput radio-button-2 w-radio-input"><span
+                                            for="woman-2" class="radio-button-label w-form-label">검증</span></label>
+                                </div>
+                                <div class="div-block-5">
+                                    <div class="text-block-16">연령</div><label class="age_button w-radio"><input
+                                            type="radio" data-name="counselee_age" id="child" value="child"
+                                            name="counselee_age"
+                                            class="w-form-formradioinput radio-button-3 w-radio-input"><span for="child"
+                                            class="radio-button-label w-form-label">14세 미만</span></label><label
+                                        class="age_button w-radio"><input type="radio" data-name="counselee_sex"
+                                            id="woman" value="woman" name="counselee_sex"
+                                            class="w-form-formradioinput radio-button-4 w-radio-input"><span
+                                            for="woman-2" class="radio-button-label w-form-label">14 ~
+                                            19세</span></label><label class="age_button w-radio"><input type="radio"
+                                            data-name="counselee_age" id="adult" value="adult" name="counselee_age"
+                                            class="w-form-formradioinput radio-button-4 w-radio-input"><span for="adult"
+                                            class="radio-button-label w-form-label">20세 이상</span></label>
+                                </div>
+                                <div class="div-block-5">
+                                    <div class="text-block-16">고민기간</div><label class="age_button w-radio"><input
+                                            type="radio" data-name="counselee_age" id="child" value="child"
+                                            name="counselee_age"
+                                            class="w-form-formradioinput radio-button-3 w-radio-input"><span
+                                            for="child-2" class="radio-button-label w-form-label">6개월
+                                            이내</span></label><label class="age_button w-radio"><input type="radio"
+                                            data-name="counselee_sex" id="woman" value="woman" name="counselee_sex"
+                                            class="w-form-formradioinput radio-button-4 w-radio-input"><span
+                                            for="woman-3" class="radio-button-label w-form-label">1년
+                                            이내</span></label><label class="age_button w-radio"><input type="radio"
+                                            data-name="counselee_age" id="adult" value="adult" name="counselee_age"
+                                            class="w-form-formradioinput radio-button-4 w-radio-input"><span
+                                            for="adult-2" class="radio-button-label w-form-label">1년 이상</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conditions_box">
+                        <div class="search_div">
+                            <div class="div-block-10"><img src="images/heart_hand.png" alt="" class="search_image">
+                                <div class="multi_filter_text">상담사</div>
+                            </div>
+                            <div class="div-block-12">
+                                <div class="div-block-5">
+                                    <div class="text-block-16">성별</div><label
+                                        class="sex_button w-clearfix w-radio"><input type="radio"
+                                            data-name="counselee_sex" id="man" value="man" name="counselee_sex"
+                                            class="w-form-formradioinput radio-button-2 w-radio-input"><span for="man-2"
+                                            class="radio-button-label w-form-label">남성</span></label><label
+                                        class="sex_button w-clearfix w-radio"><input type="radio"
+                                            data-name="counselee_sex" id="woman-2" value="woman" name="counselee_sex"
+                                            class="w-form-formradioinput radio-button-2 w-radio-input"><span
+                                            for="woman-3" class="radio-button-label w-form-label">여성</span></label>
+                                </div>
+                                <div class="div-block-6">
+                                    <div class="text-block-16">전문성</div><label class="age_button w-radio"><input
+                                            type="radio" data-name="counselee_age" id="child" value="child"
+                                            name="counselee_age"
+                                            class="w-form-formradioinput radio-button-3 w-radio-input"><span
+                                            for="child-2"
+                                            class="radio-button-label w-form-label">???</span></label><label
+                                        class="age_button w-radio"><input type="radio" data-name="counselee_sex"
+                                            id="woman" value="woman" name="counselee_sex"
+                                            class="w-form-formradioinput radio-button-4 w-radio-input"><span
+                                            for="woman-3"
+                                            class="radio-button-label w-form-label">???</span></label><label
+                                        class="age_button w-radio"><input type="radio" data-name="counselee_age"
+                                            id="adult" value="adult" name="counselee_age"
+                                            class="w-form-formradioinput radio-button-4 w-radio-input"><span
+                                            for="adult-2" class="radio-button-label w-form-label">???</span></label>
+                                </div>
+                                <div class="div-block-5">
+                                    <div class="text-block-16">상담 가능 요일</div><label class="age_button w-radio"><input
+                                            type="radio" data-name="counselee_age" id="child" value="child"
+                                            name="counselee_age"
+                                            class="w-form-formradioinput radio-button-3 w-radio-input"><span
+                                            for="child-2"
+                                            class="radio-button-label w-form-label">무관</span></label><label
+                                        class="age_button w-radio"><input type="radio" data-name="counselee_sex"
+                                            id="woman" value="woman" name="counselee_sex"
+                                            class="w-form-formradioinput radio-button-4 w-radio-input"><span
+                                            for="woman-3"
+                                            class="radio-button-label w-form-label">평일</span></label><label
+                                        class="age_button w-radio"><input type="radio" data-name="counselee_age"
+                                            id="adult" value="adult" name="counselee_age"
+                                            class="w-form-formradioinput radio-button-4 w-radio-input"><span
+                                            for="adult-2" class="radio-button-label w-form-label">주말</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
